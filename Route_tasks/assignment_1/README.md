@@ -1,87 +1,200 @@
-# Machine Learning Journey: Assignment 1
+# 🐍 Machine Learning Journey: Assignment 1 — Introduction to Programming
 
-This repository documents my progress and solutions for the assignments in the Route Academy Machine Learning course. This first assignment focuses on foundational programming concepts in Python.
-
----
-
-## About This Assignment
-
-**Assignment Name**: Introduction to Programming 
-**Course**: Machine Learning with Route Academy
-**Instructor**: Ahmed Ziada
-
-This assignment covers a range of introductory Python programming problems designed to build a strong foundation in core concepts like control flow, data structures, and basic algorithms.
+This repository documents my progress and solutions for the assignments in the **Route Academy Machine Learning** course.  
+This first assignment focuses on **foundational programming concepts in Python**, building a strong base for future machine learning tasks.
 
 ---
 
-## Problem Solutions
+## 📘 About This Assignment
 
-Below is a brief summary of each problem and the approach taken to solve it.
+| **Field** | **Details** |
+|------------|-------------|
+| **Assignment Name** | Introduction to Programming |
+| **Course** | Machine Learning with Route Academy |
+| **Instructor** | Ahmed Ziada |
+| **Student** | Abdelrahman Yasser |
 
-### Problem 1: Maximum and Minimum of Three Numbers
-**Description**: Find the maximum and minimum of three numbers, or check if they're equal and determine if the number is positive or negative[cite: 2].
-**Approach**: The solution uses a series of `if/elif` statements to compare the three numbers and identify the maximum and minimum values. A special case handles when all three numbers are equal.
+---
 
-### Problem 2: Check for Vowel Characters
-**Description**: Check if a word contains a vowel and print its position if one is found[cite: 5, 6].
-**Approach**: The program iterates through the input string, checking each character against a predefined list of vowels. If a match is found, it prints the vowel and its index. The input is converted to lowercase to ensure the check is not case-sensitive.
+## 🎯 Objective
 
-### Problem 3: Display Last Digit
-**Description**: Display the last digit of a given number[cite: 7].
-**Approach**: The modulo operator (`%`) is used with 10 to extract the last digit of the number.
+This assignment includes a series of Python programming problems designed to strengthen understanding of **control flow**, **data structures**, and **basic algorithms** — key foundations for machine learning.
 
-### Problem 4: Divisibility Check
-**Description**: Determine if a number is divisible by both 2 and 3[cite: 8].
-**Approach**: The program uses the modulo operator (`%`) to check for a remainder of 0 when the input number is divided by 2 and 3. It uses the `and` operator to ensure both conditions are met.
+---
 
-### Problem 5: Class Attendance Percentage
-**Description**: Calculate a student's attendance percentage and determine if they can sit for an exam if their percentage is less than 75%[cite: 9].
-**Approach**: The code calculates the percentage of days attended and then uses an `if/else` statement to print whether the student is eligible for the exam. It also includes a check to ensure the number of absent days is not greater than the total working days.
+## 🧩 Problem Summaries & Approaches
 
-### Problem 6: String Case Conversion
-**Description**: Convert a string to all uppercase or all lowercase based on whether lowercase letters are less than uppercase, or vice versa[cite: 12, 13, 14].
-**Approach**: The program counts the number of uppercase and lowercase characters. An `if/elif` block then uses these counts to decide whether to convert the string to uppercase or lowercase.
+Below is a summary of each problem and the solution approach used.
 
-### Problem 7: Palindrome and Armstrong Number Check
-**Description**: Check if a number is a palindrome or an Armstrong number[cite: 15].
-**Approach**: To check for a palindrome, the number is reversed and compared to the original. For an Armstrong number, the sum of each digit raised to the power of the number of digits is calculated and compared to the original number.
+---
 
-### Problem 8: Number to Words Conversion (Bonus)
-**Description**: Convert a number to its word representation (e.g., 124 → One hundred and twenty-four)[cite: 16].
-**Approach**: A recursive function handles different ranges of numbers (0-19, 20-99, 100-999) by breaking the number down into its constituent parts and mapping them to their word equivalents.
+### **Problem 1: Maximum and Minimum of Three Numbers**
+**Description:**  
+Find the maximum and minimum among three numbers, or check if they’re equal and determine whether each is positive or negative.  
 
-### Problem 9: Series Sum Calculation
-**Description**: Calculate the sum of the series $1 + 4 - 9 + 16 - 25 + 36 ... n$ terms[cite: 19].
-**Approach**: A loop iterates from 2 to `n`, adding the square of `i` if `i` is even and subtracting it if `i` is odd. The sum starts with 1.
+**Approach:**  
+Used a series of `if/elif` statements to compare numbers and detect equality. Handled positive/negative checks with additional conditional branches.
 
-### Problem 10: Count Word Occurrences
-**Description**: Count the occurrences of the word "car" in a string and find their positions[cite: 20].
-**Approach**: The input string is split into words. The code then loops through the list of words to find and count "car", printing its position (index + 1) each time it's found.
+---
 
-### Problem 11: Input Type Processing
-**Description**: Process user input differently based on its type: sum digits for a number, remove spaces for text, or split numbers and text if both are present[cite: 22, 23, 24, 25].
-**Approach**: The solution uses string methods like `isdigit()` and `isalpha()` to determine the input type. It then applies the appropriate logic: a loop for digit summation, `replace()` for space removal, or `split()` to separate numbers and text.
+### **Problem 2: Check for Vowel Characters**
+**Description:**  
+Check if a word contains a vowel and print its position if found.  
 
-### Problem 12: Average of Tuple of Tuples
-**Description**: Calculate the average of numbers within each inner tuple of a tuple of tuples[cite: 26].
-**Approach**: The code iterates through the outer tuple, using `sum()` and `len()` for each inner tuple to compute the average. The results are stored in a new list.
+**Approach:**  
+Iterated through each character, comparing against a list of vowels. Used `.lower()` to make the search case-insensitive and printed the vowel and index when matched.
 
-### Problem 13: Check and Sort List
-**Description**: Check if a list is empty and, if not, sort it in increasing order[cite: 29, 30].
-**Approach**: The solution checks the length of the list. If it's not empty, it uses the built-in `sort()` method to sort the list in place.
+---
 
-### Problem 14: Remove Even Numbers
-**Description**: Remove all even numbers from a specified list[cite: 31, 32].
-**Approach**: A loop iterates through the list in reverse order using `list.pop(i)` to safely remove even numbers without affecting the indices of subsequent elements.
+### **Problem 3: Display Last Digit**
+**Description:**  
+Display the last digit of a given number.  
 
-### Problem 15: Extract Elements with High Frequency
-**Description**: Extract elements from a list that have a frequency greater than a specified value `K`[cite: 33].
-**Approach**: The program counts the frequency of each element and adds it to a `result_list` if its count is greater than `K`. A check is added to avoid duplicate entries in the final list.
+**Approach:**  
+Used the modulo operator (`% 10`) to extract the last digit.
 
-### Problem 16: Sort Dictionary Keys and Values
-**Description**: Sort both the values (lists) and the keys of a dictionary[cite: 34].
-**Approach**: The code first sorts the list of values for each key using `list.sort()`. It then creates a new dictionary by iterating through the sorted keys to produce the final sorted output.
+---
 
-### Problem 17: Student Dictionary Management
-**Description**: Create and manage a dictionary of student information (age and grades) with options to view and edit student data[cite: 36, 37].
-**Approach**: The program uses a `while` loop to create an interactive menu. It provides options to view, edit, or exit. Input validation is included to handle cases where a student isn't found or invalid data is entered.
+### **Problem 4: Divisibility Check**
+**Description:**  
+Determine if a number is divisible by both 2 and 3.  
+
+**Approach:**  
+Applied the modulo operator (`%`) to test divisibility by both 2 and 3, combining results with the logical `and` operator.
+
+---
+
+### **Problem 5: Class Attendance Percentage**
+**Description:**  
+Compute a student’s attendance percentage and determine exam eligibility if attendance < 75%.  
+
+**Approach:**  
+Calculated attendance percentage, checked for logical validity, and printed eligibility using `if/else` blocks.
+
+---
+
+### **Problem 6: String Case Conversion**
+**Description:**  
+Convert a string to either all upper-case or all lower-case depending on which case appears more frequently.  
+
+**Approach:**  
+Counted upper- vs. lower-case letters, then applied `.upper()` or `.lower()` accordingly.
+
+---
+
+### **Problem 7: Palindrome and Armstrong Number Check**
+**Description:**  
+Check whether a number is a palindrome or an Armstrong number.  
+
+**Approach:**  
+- **Palindrome:** reversed the number as a string and compared.  
+- **Armstrong:** summed digits raised to the power of the number’s length and compared to the original.
+
+---
+
+### **Problem 8: Number to Words Conversion (Bonus)**
+**Description:**  
+Convert a number into its English word form (e.g., 124 → “One hundred and twenty-four”).  
+
+**Approach:**  
+Implemented a recursive function handling ranges (0–19, 20–99, 100–999) by mapping each segment to its corresponding text representation.
+
+---
+
+### **Problem 9: Series Sum Calculation**
+**Description:**  
+Calculate the sum of the series 1 + 4 − 9 + 16 − 25 + 36 … up to n terms.  
+
+**Approach:**  
+Initialized sum = 1, looped from 2 to n, and alternated between adding even squares and subtracting odd squares.
+
+---
+
+### **Problem 10: Count Word Occurrences**
+**Description:**  
+Count occurrences of the word “car” in a string and output their positions.  
+
+**Approach:**  
+Split the input text into words, looped with enumeration, counted matches, and displayed their indices + 1.
+
+---
+
+### **Problem 11: Input Type Processing**
+**Description:**  
+Process user input differently depending on its type: numeric, alphabetic, or mixed.  
+
+**Approach:**  
+Used `.isdigit()` and `.isalpha()` for type checks.  
+- For numbers → summed digits.  
+- For text → removed spaces.  
+- For mixed → split into separate components.
+
+---
+
+### **Problem 12: Average of Tuple of Tuples**
+**Description:**  
+Compute the average of numbers inside each inner tuple within a larger tuple.  
+
+**Approach:**  
+Iterated over the outer tuple and applied `sum()` / `len()` on each inner tuple, storing results in a new list.
+
+---
+
+### **Problem 13: Check and Sort List**
+**Description:**  
+Check if a list is empty; if not, sort it in ascending order.  
+
+**Approach:**  
+Used `len()` to check emptiness and `list.sort()` for sorting in-place.
+
+---
+
+### **Problem 14: Remove Even Numbers**
+**Description:**  
+Remove all even numbers from a list.  
+
+**Approach:**  
+Iterated backward through the list using `.pop(i)` to safely remove even elements without index errors.
+
+---
+
+### **Problem 15: Extract Elements with High Frequency**
+**Description:**  
+Extract elements from a list that appear more than K times.  
+
+**Approach:**  
+Counted element frequencies using a dictionary and appended elements with counts > K to a result list, avoiding duplicates.
+
+---
+
+### **Problem 16: Sort Dictionary Keys and Values**
+**Description:**  
+Sort both dictionary keys and their list values.  
+
+**Approach:**  
+Sorted each list using `.sort()` and then reconstructed a new dictionary from sorted keys.
+
+---
+
+### **Problem 17: Student Dictionary Management**
+**Description:**  
+Create and manage a dictionary of student info (age + grades) with options to view or edit.  
+
+**Approach:**  
+Implemented an interactive menu in a `while` loop. Included input validation and error handling for missing students or invalid entries.
+
+---
+
+## ⚙️ How to Run the Code
+
+### **Requirements**
+You only need **Python 3.x** — no external libraries required.
+
+### **Run Instructions**
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/abdelrahmanyasser10/AI-ML-DL.git
+   cd AI-ML-DL/Route_tasks/assignment_1
+2. Run the Python file(s):
+   ```bash
+    python Assignment1.py
