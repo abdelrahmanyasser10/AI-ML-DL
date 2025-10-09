@@ -9,7 +9,7 @@ This fourth assignment focuses on **data analysis** and **manipulation** using t
 **Assignment Name:** Pandas  
 **Course:** Machine Learning with Route Academy  
 **Instructor:** Ahmed Ziada  
-**Student:** Abdelrahman Yasser  
+
 
 This assignment covers a series of tasks designed to develop proficiency in:
 - Loading, inspecting, and cleaning data  
