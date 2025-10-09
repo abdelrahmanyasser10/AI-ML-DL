@@ -6,11 +6,11 @@ This repository documents my progress and solutions for the assignments in the R
 
 ## About This Assignment
 
-**Assignment Name**: Introduction to Programming [cite: 1]
+**Assignment Name**: Introduction to Programming 
 **Course**: Machine Learning with Route Academy
 **Instructor**: Abdelrahman Yasser Mohamed
 
-This assignment covers a range of introductory Python programming problems designed to build a strong foundation in core concepts like control flow, data structures, and basic algorithms[cite: 1].
+This assignment covers a range of introductory Python programming problems designed to build a strong foundation in core concepts like control flow, data structures, and basic algorithms.
 
 ---
 
