@@ -12,7 +12,7 @@ This particular assignment focuses on **Support Vector Machines (SVMs)** — a p
 | **Assignment Name** | SVM Task |
 | **Course** | Machine Learning with Route Academy |
 | **Instructor** | Ahmed Ziada |
-| **Student** | Abdelrahman Yasser |
+
 
 ---
 
