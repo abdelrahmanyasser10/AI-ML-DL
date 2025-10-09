@@ -7,7 +7,9 @@ This repository documents my progress and solutions for the assignments in the R
 ## About This Assignment
 
 **Assignment Name**: Functions & OOP
+
 **Course**: Machine Learning with Route Academy
+
 **Instructor**: Ahmed Ziad
 
 This assignment contains a series of problems designed to solidify understanding of creating and using functions, as well as designing and implementing Python classes to model real-world concepts.
