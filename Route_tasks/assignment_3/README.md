@@ -9,7 +9,7 @@ This third assignment focuses on **data manipulation** and **scientific computin
 **Assignment Name:** NumPy  
 **Course:** Machine Learning with Route Academy  
 **Instructor:** Ahmed Ziada  
-**Student:** Abdelrahman Yasser  
+
 
 This assignment covers a series of problems designed to build proficiency in using **NumPy** for:
 - Array creation and reshaping  
