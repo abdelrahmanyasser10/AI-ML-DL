@@ -1,70 +1,132 @@
-# Machine Learning Journey: Assignment 4
+# 🧾 Machine Learning Journey: Assignment 4 — Pandas
 
-This repository documents my progress and solutions for the assignments in the Route Academy Machine Learning course. This assignment focuses on **foundational data analysis and manipulation using the Pandas library**.
-
----
-
-## About This Assignment
-
-**Assignment Name**: Pandas
-
-**Course**: Machine Learning with Route Academy
-
-**Instructor**: Ahmed Ziada
-
-
-This assignment covers a range of problems designed to **build proficiency in data loading, cleaning, manipulation, and analysis using the Pandas library**. The tasks involve working with a real-world dataset to answer specific questions.
+This repository documents my progress and solutions for the assignments in the **Route Academy Machine Learning course**.  
+This fourth assignment focuses on **data analysis** and **manipulation** using the **Pandas** library.
 
 ---
 
-## Problem Solutions
+## 📘 About This Assignment
+**Assignment Name:** Pandas  
+**Course:** Machine Learning with Route Academy  
+**Instructor:** Ahmed Ziada  
+**Student:** Abdelrahman Yasser  
 
-Below is a brief summary of each problem and the approach taken to solve it.
+This assignment covers a series of tasks designed to develop proficiency in:
+- Loading, inspecting, and cleaning data  
+- Performing descriptive statistical analysis  
+- Aggregating, grouping, and summarizing data  
+- Working with time-based data and categorical variables  
 
-### Question 1: Load the Dataset
-**Description**: Load the "Online Shopping Dataset.csv" file into a Pandas DataFrame.
-**Approach**: I used the `pd.read_csv()` function to load the dataset into a DataFrame, ensuring the data is correctly structured for subsequent analysis.
-
-### Question 2: Display Basic Information
-**Description**: Display the first 5 rows, the last 5 rows, and a concise summary of the DataFrame.
-**Approach**: I used the `.head()`, `.tail()`, and `.info()` methods to quickly inspect the data, check for missing values, and understand the data types of each column.
-
-### Question 3: Data Cleaning
-**Description**: Handle missing values, if any, and convert columns with incorrect data types.
-**Approach**: First, I used `.isnull().sum()` to check for missing values. To handle them, I filled missing values in `Payment Method` with the most frequent method using `.mode()[0]` and in `Product Category` and `Customer Location` with "Unknown" using `.fillna()`. I also converted the `Purchase Date` to datetime format using `pd.to_datetime()`.
-
-### Question 4: Descriptive Statistics
-**Description**: Generate descriptive statistics for numerical columns and get the value counts for categorical columns.
-**Approach**: I used `.describe()` for numerical columns like `Total Amount` to get statistics such as mean, standard deviation, and quartiles. For categorical columns, I used `.value_counts()` to find the frequency of each unique value.
-
-### Question 5: Total Revenue
-**Description**: Calculate the total revenue generated from online sales.
-**Approach**: I summed the `Total Amount` column using `.sum()` to find the total revenue.
-
-### Question 6: Sales Trends
-**Description**: Analyze monthly sales trends.
-**Approach**: I extracted the month from the `Purchase Date` and created a new column. Then, I grouped the data by month and summed the `Total Amount` to see how sales varied from month to month.
-
-### Question 7: Top 5 Bestselling Products
-**Description**: Identify the top 5 bestselling products based on the number of items sold.
-**Approach**: I grouped the data by `Product Category` and summed the `Total Items` column. Then, I used `.sort_values()` in descending order and `.head(5)` to get the top 5 categories.
-
-### Question 8: Top 5 Customers by Revenue
-**Description**: Identify the top 5 customers who have generated the most revenue.
-**Approach**: I grouped the data by `Customer ID` and summed the `Total Amount`. The result was sorted in descending order and the top 5 were selected.
-
-### Question 9: Average Order Value by Payment Method
-**Description**: Calculate the average order value for each payment method.
-**Approach**: I grouped the data by `Payment Method` and used the `.mean()` method on the `Total Amount` column to find the average value for each payment method.
-
-### Question 10: Customer Demographics
-**Description**: Analyze the number of orders and average order value for each customer location.
-**Approach**: I grouped the data by `Customer Location` and used `.size()` to count the number of orders and `.agg()` with `('Total Amount', 'mean')` to calculate the average order value for each location.
+The tasks utilize a real-world dataset — **"Online Shopping Dataset.csv"** — to extract actionable insights.
 
 ---
 
-### How to Run the Code
+## 🧩 Problem Solutions
 
-To run this analysis, ensure you have the `pandas` library installed. You can then execute the code in a Jupyter Notebook or a Python environment. The provided notebook `Assignment_04_Pandas.ipynb` contains all the code cells and can be run directly.
+### **Question 1: Load the Dataset**
+**Description:**  
+Load the *Online Shopping Dataset.csv* file into a Pandas DataFrame.  
 
-***
+**Approach:**  
+Used `pd.read_csv()` to import the dataset, ensuring proper structure for subsequent analysis.
+
+---
+
+### **Question 2: Display Basic Information**
+**Description:**  
+Display the first 5 rows, last 5 rows, and a concise summary of the DataFrame.  
+
+**Approach:**  
+Used `.head()`, `.tail()`, and `.info()` to explore the dataset, check for missing values, and understand column data types.
+
+---
+
+### **Question 3: Data Cleaning**
+**Description:**  
+Handle missing values and correct column data types.  
+
+**Approach:**  
+- Checked for missing values using `.isnull().sum()`.  
+- Filled missing categorical data using `.fillna()` with `"Unknown"`.  
+- Filled missing payment methods with the mode: `.mode()[0]`.  
+- Converted *Purchase Date* to datetime using `pd.to_datetime()`.
+
+---
+
+### **Question 4: Descriptive Statistics**
+**Description:**  
+Generate descriptive statistics for numerical columns and analyze categorical columns.  
+
+**Approach:**  
+- Used `.describe()` to obtain numerical statistics (mean, std, quartiles).  
+- Used `.value_counts()` to summarize categorical variable frequencies.
+
+---
+
+### **Question 5: Total Revenue**
+**Description:**  
+Calculate the total revenue generated from online sales.  
+
+**Approach:**  
+Summed the `Total Amount` column using `.sum()`.
+
+---
+
+### **Question 6: Sales Trends**
+**Description:**  
+Analyze monthly sales trends to understand seasonal patterns.  
+
+**Approach:**  
+- Extracted month from *Purchase Date* using `.dt.month`.  
+- Grouped by month and summed `Total Amount` using `.groupby()` and `.sum()`.
+
+---
+
+### **Question 7: Top 5 Bestselling Products**
+**Description:**  
+Identify the top 5 bestselling product categories.  
+
+**Approach:**  
+Grouped data by `Product Category`, summed the `Total Items`, then used `.sort_values(ascending=False).head(5)`.
+
+---
+
+### **Question 8: Top 5 Customers by Revenue**
+**Description:**  
+Identify the top 5 customers generating the most revenue.  
+
+**Approach:**  
+Grouped by `Customer ID`, summed `Total Amount`, and sorted descending to get top 5.
+
+---
+
+### **Question 9: Average Order Value by Payment Method**
+**Description:**  
+Calculate the average order value for each payment method.  
+
+**Approach:**  
+Grouped data by `Payment Method` and used `.mean()` on `Total Amount`.
+
+---
+
+### **Question 10: Customer Demographics**
+**Description:**  
+Analyze customer orders and spending behavior by location.  
+
+**Approach:**  
+Grouped by `Customer Location` and applied:
+- `.size()` for number of orders  
+- `.agg({'Total Amount': 'mean'})` for average order value  
+
+---
+
+## ⚙️ How to Run the Code
+To execute this analysis:
+
+1. Ensure **Pandas** is installed:
+   ```bash
+   pip install pandas
+2. Open the notebook file:
+   ```bash
+   Assignment_04_Pandas.ipynb
+3. Run each cell in Jupyter Notebook or VS Code (Jupyter extension) to reproduce the analysis.
