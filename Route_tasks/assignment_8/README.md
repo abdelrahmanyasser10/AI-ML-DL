@@ -10,7 +10,7 @@ This assignment focuses on the **K-Nearest Neighbors (KNN)** algorithm — a sup
 - **Assignment Name:** Classification (KNN)  
 - **Course:** Machine Learning with Route Academy  
 - **Instructor:** Ahmed Ziada  
-- **Student:** Abdelrahman Yasser  
+
 
 This assignment is designed to build proficiency in **implementing and evaluating** a K-Nearest Neighbors (KNN) classifier for a real-world classification task.  
 The goal is to **classify car evaluations** based on the given dataset, showcasing the complete pipeline — from **data loading and preprocessing** to **model training**, **evaluation**, and **hyperparameter tuning**.
